@@ -4,9 +4,7 @@
         <meta charset="UTF-8">
         <meta name="description" content="">
         <title>Login/Sign Up</title>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <link rel="shortcut icon" href="">
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="picture.css">
     </head>
 
     <body> 
@@ -23,15 +21,33 @@
                 $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL); 
                 $passcode = $_POST["passcode"];
 
-                $exists = mysqli_query($conn, "SELECT * FROM info WHERE (email = '$email' AND passcode = '$passcode');");
+                $select = mysqli_query($conn, "SELECT * FROM info WHERE (email = '$email' AND passcode = '$passcode');");
 
-                if (mysqli_num_rows($exists) > 0) {
-                    echo "Logging in...";
+                if (mysqli_num_rows($select) > 0) {
+                    $fetch = mysqli_fetch_assoc($select);
+                    ?>
+                    <h2>Welcome <?php echo $fetch['username'];?></h2>
+                    <div class="profile-pic-div">
+                        <img src="user.jpg" id="photo">
+                        <input type="file" id="file">
+                        <label for="file" id="uploadBtn">Choose Photo</label>
+                    </div>
+                    <div class="options">
+                        <a href='index.html'>Main</a>
+                        <h4>Posts</h4>
+                        <h4>Comments</h4>
+                        <h4 style="color:red">Sign out</h4>
+                        <h4 style="color:red">Delete account</h4>
+                    </div>
+                    <?php
+                    
                 } else {
                     echo "incorrect username/password";
+                    echo "<a href='index.html'>Main</a>";
                 }
-
-            ?>
+            ?> 
         </div>
+
+        <script src="picture.js"></script>
     </body>
 </html>
