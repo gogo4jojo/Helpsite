@@ -1,13 +1,26 @@
+var icon = document.getElementById("icon");
 
-function setFormMessage(formElement, type, message){
-    const messageElement = formElement.querySelector(".form__message");
-
-    messageElement.textContent = message;
-    messageElement.classList.remove("form__message--success", "form__message--error");
-    messageElement.classList.add("form__message--${type}");
+icon.onclick = function(){
+    document.body.classList.toggle("light-theme");
+    if(document.body.classList.contains("light-theme")){
+        icon.src = "moon.png"
+    }else {
+        icon.src = "sun.png"
+    }
 }
 
-setFormMessage(loginForm, "success", "You're logged in!");
+var Q1 = document.getElementById("Q1");
+Q1.onclick = function(){
+    var A1 = document.getElementById("A1");
+    if (A1.style.display === "none"){
+        A1.style.display = "flex";
+        Q1.innerText = "Hide Answer";
+    }else{
+        A1.style.display = "none";
+        Q1.innerText = "Show Answer";
+    }
+}
+
 
 document.addEventListener("DOMContentLoaded", () => {
     
@@ -25,28 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
         loginForm.classList.remove("form--hidden");
         createAccountForm.classList.add("form--hidden");
     });
-});
 
-loginForm.addEventListener("submit")
-
-
-var db = openDatabase("data","1.0","database", 65535);
-$(function(){
-$("#enter").click(function(){
-    db.transaction(function(transaction){
-
-        var sql="INSERT INTO info VALUES("
-        "email, " +
-        "username, " +
-        "passcode)";
-
-        transaction.executeSql(sql, undefined, 
-            function() {
-                alert("Information was added");
-            },function(){
-                alert("Error");
-            })
-    });
-});
 });
 
