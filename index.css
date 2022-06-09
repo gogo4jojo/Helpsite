@@ -1,0 +1,87 @@
+#icon {
+    top: 0px;
+    right: 0px;
+    margin: 2rem;
+    position: absolute;
+    width: 30px;
+    cursor: pointer;
+}
+
+#quiz1 {
+    margin-left: 2rem;
+}
+
+#photo {
+    margin: 2rem;
+    border: 6px solid black;
+    border-radius: 2rem;
+}
+
+#important {
+    text-decoration: underline;
+}
+
+.answer {
+    color: red;
+    margin: 2rem;
+    display: none;
+}
+
+.question {
+    margin: 2rem;
+}
+
+.text {
+    margin: 1rem;
+    font-size: 20px;
+    color: var(--primary-text-color);
+    max-width: 750px;
+}
+
+.space {
+    height: 100px;
+}
+
+.section {
+    text-align: center;
+    font-size: 25px;
+    font-family:'Courier New', Courier, monospace;
+    -webkit-text-stroke: 1px black;
+    
+    font-size: 20px;
+    max-width: 400px;
+    max-height: 200px;
+    margin: 2rem;
+    
+    padding: 2rem;
+    background-image: url("notebook.jpg");
+    border-radius: 4px;
+    border: outset;
+    border-color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+:root {
+    --primary-background-color: rgb(37, 41, 54);
+    --primary-text-color: white;
+}
+.light-theme{
+    --primary-background-color: white;
+    --primary-text-color: black;
+}
+
+.page {
+    background-color: var(--primary-background-color);
+}
+
+.header {
+    font-size: 30px;
+    color: var(--primary-text-color);
+}
+
+.sections{
+    color: var(--primary-text-color);
+}
