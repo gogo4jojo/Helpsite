@@ -9,13 +9,21 @@
 </head>
 <body class="page">
     <h1 class="header">Derivatives</h1>
+    <ul>
+        <h2 class="header">Sections</h2>
+        <a href="#definition"><li class="text">Derivative definition</li></a>
+        <a href="#chain-rule"><li class="text">Chain rule</li></a>
+        <a href="#cheat-sheet"><li class="text">Cheat sheet</li></a>
+    </ul>
     <br>
-    <h3 class="header">What is a derivative?</h3>
+    <h3 class="header" id="definition">What is a derivative?</h3>
+    
     <li class="text"> 
         An easy way to think of a derivative is the change of rate. 
         For example, velocity is the change of position over time. Velocity is also the derivative of position.
         Look at this graph below.
     </li>
+    <img src="definition-derivative.png" id="photo">
     <img src="position_graph.jpg" id="photo">
     <li class="text"> 
         <b id="important">To find the velocity during a time interval you need to calculate the slope.</b>
@@ -30,11 +38,41 @@
     <p class="answer" id="A1" style="display:none">20 m/s</p>
     <button class="question" id="Q1" type="button">Show Answer</button>
 
+    <div id="chain rule">
+        <h3 class="header" id="chain-rule">Chain Rule</h3>
+        <ul>
+        <li class="text"><mark>Tip: to take the derivative of a term like 5x<sup>2</sup>. First, mulitply the coeffecient by the exponent
+        (the exponent is 2 and the coeffecient is 5). 
+        Then, subtract the exponent by 1.</mark></li>
+        <ul>
+            <li class="text">f (x) = Cx<sup>n</sup> &emsp; f '(x) = (Cn)x<sup>n-1</sup></li>
+        </ul>
+        <li class="text">Example 1</li>
+        <ul>
+            <li class="text">f (x) = x<sup>2</sup></li>
+            <li class="text">f '(x) = 2x</li>
+        </ul>
+        <li class="text">Example 2</li>
+        <ul>
+            <li class="text">f (x) = 2x<sup>3</sup></li>
+            <li class="text">f '(x) = 6x<sup>2</sup></li>
+        </ul>
+        
+        </ul>
+    </div>
+
+    <div id="cheatsheet">
+        <h3 class="header" id="cheat-sheet">Cheat sheet</h3>
+        <img src="dervatives.png" id="photo">
+    </div>
+
+
 
     <img src="sun.png" id="icon">
 
     <div class="space"></div>
     <a class="section" href="index.html">Main</a>
+    <div class="space"></div>
 
     <script src="main.js"></script>
 </body>
