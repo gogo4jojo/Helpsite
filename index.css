@@ -42,8 +42,18 @@
 }
 
 .table th {
+    border: 1px solid var(--primary-text-color);
+}
+
+.fraction  {
+    font-size: 20px;
+    text-align: center;
+    margin: 2rem;
+    color: var(--primary-text-color);
+}
+
+#numerator {
     border-bottom: 1px solid var(--primary-text-color);
-    border-right: 1px solid var(--primary-text-color);
 }
 
 .answer {
