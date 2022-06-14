@@ -11,40 +11,45 @@
     <h1 class="header">Derivatives</h1>
     <ul>
         <h2 class="header">Sections</h2>
-        <li class="text"><a href="#definition" style="color:white">Derivative definition</a></li>
-        <li class="text"><a href="#power-rule" style="color:white">Power rule</a></li>
-        <li class="text"><a href="#chain-rule" style="color:white">Chain rule</a></li>
-        <li class="text"><a href="#cheat-sheet" style="color:white">Cheat sheet</a></li>
-
+        <li class="text"><a href="#definition" class="text">Derivative definition</a></li>
+        <li class="text"><a href="#power-rule" class="text">Power rule</a></li>
+        <li class="text"><a href="#product-rule" class="text">Product rule</a></li>
+        <li class="text"><a href="#quotient-rule" class="text">Quotient rule</a></li>
+        <li class="text"><a href="#chain-rule" class="text">Chain rule</a></li>
+        <li class="text"><a href="#cheat-sheet" class="text">Cheat sheet</a></li>
+        <li class="text"><a href="#practice-problems" class="text">Practice problems</a></li>
     </ul>
     <br>
-    <h3 class="header" id="definition">What is a derivative?</h3>
+    <div id="derivative-definition">
+        <h3 class="header" id="definition">What is a derivative?</h3>
     
-    <li class="text"> 
-        An easy way to think of a derivative is the change of rate. 
-        For example, velocity is the change of position over time. Velocity is also the derivative of position.
-    </li>
+        <li class="text"> 
+            An easy way to think of a derivative is the change of rate. 
+            For example, velocity is the change of position over time. Velocity is also the derivative of position.
+        </li>
+        
+        <li class="text">
+            A dervative can be represented with the apostrophe ( <b>'</b> ) like in f '(x) <br>
+            OR with<br>
+            <img src="notation.jpg" id="photo">
+        </li>
+        
+        <img src="definition-derivative.png" id="photo">
+        <img src="position_graph.jpg" id="photo">
+        <li class="text"> 
+            <b id="important">To find the velocity during a time interval you need to calculate the slope.</b>
+            Take the change of position and divide it by the change of time.
+            From 0 to 1 seconds, the position remains at 20 meters. The average velocity during this interval
+            is 0 m/s.
+        </li>
+        <li class="text">
+            From 1 to 3 seconds, the position increases from 20 meters to 60 meters. What is the average velocity during this period?
+        </li>
     
-    <li class="text">
-        A dervative can be represented with the apostrophe ( <b>'</b> ) like in f '(x) <br>
-        OR with<br>
-        <img src="notation.jpg" id="photo">
-    </li>
+        <p class="answer" id="A1" style="display:none">20 m/s</p>
+        <button class="question" id="Q1" type="button">Show Answer</button>
+    </div>
     
-    <img src="definition-derivative.png" id="photo">
-    <img src="position_graph.jpg" id="photo">
-    <li class="text"> 
-        <b id="important">To find the velocity during a time interval you need to calculate the slope.</b>
-        Take the change of position and divide it by the change of time.
-        From 0 to 1 seconds, the position remains at 20 meters. The average velocity during this interval
-        is 0 m/s.
-    </li>
-    <li class="text">
-        From 1 to 3 seconds, the position increases from 20 meters to 60 meters. What is the average velocity during this period?
-    </li>
- 
-    <p class="answer" id="A1" style="display:none">20 m/s</p>
-    <button class="question" id="Q1" type="button">Show Answer</button>
 
     <div id="power_rule">
         <h3 class="header" id="power-rule">Power Rule</h3>
@@ -67,9 +72,58 @@
             <li class="text">f (x) = 2x<sup>3</sup></li>
             <li class="text">f '(x) = 6x<sup>2</sup></li>
         </ul>
-        
+        <li class="text">Example 3</li>
+        <ul>
+            <li class="text">f (x) = x<sup>-2</sup></li>
+            <li class="text">f '(x) = -2x<sup>-3</sup></li>
+        </ul>
     </div>
 
+    <div>
+        <h3 class="header" id="product-rule">Product Rule</h3>
+        <img src="product-rule.jpg" id="photo">
+        <p class="text">
+            Product rule: ( f '(x) &times; g(x) ) + ( f(x) &times; g'(x) ) <br>
+            The product rule is useful when two functions or polynomials are being multiplied.
+        </p>
+        <ul>
+            <li class="text">Example 1</li>
+            <ul>
+                <li class="text">x<sup>2</sup> &times; sin(x)</li>
+                <li class="text">
+                    f(x) = x<sup>2</sup> &emsp; g(x) = sin(x)<br>
+                    f '(x) = 2x &emsp; g '(x) = cos(x) 
+                </li>
+                <li class="text">
+                    ( 2x &times; sin(x) ) + ( x<sup>2</sup> &times; cos(x) )
+                </li>
+            </ul>
+            <li class="text">Example 2</li>
+            <ul>
+                <li class="text">5x<sup>7</sup> &times; e<sup>2x</sup></li>
+                <li class="text">
+                    f(x) = 5x<sup>7</sup> &emsp; g(x) = e<sup>2x</sup><br>
+                    f '(x) = 35x<sup>6</sup> &emsp; g '(x) = 2e<sup>2x</sup>
+                </li>
+                <li class="text">
+                    ( 35x<sup>6</sup> &times; e<sup>2x</sup> ) + ( 5x<sup>7</sup> &times; 2e<sup>2x</sup> )
+                </li>
+            </ul>
+        </ul>
+    </div>
+
+    <div>
+        <h3 class="header" id="quotient-rule">Quotient Rule</h3>
+        <img src="quotient-rule.jpg" id="photo">
+        <p class="text">
+            
+        </p>
+        <ul>
+            <li class="text">
+
+            </li>
+        </ul>
+    </div>
 
     <div id="chain_rule">
         <h3 class="header" id="chain-rule">Chain Rule</h3>
@@ -98,7 +152,7 @@
                     </li>
                     <ul>
                         <li class="text"><mark>
-                            Tip: the derivative of a constant number is 0. Visit the <a href="#cheat-sheet">cheat sheet</a> for more.</mark></li>
+                            Tip: the derivative of a constant number is 0. Visit the <a style="color:black" href="#cheat-sheet">cheat sheet</a> for more.</mark></li>
                     </ul>
                     <li class="text">
                         f '(u) = 20(u)<sup>3</sup><br> 
@@ -113,7 +167,6 @@
                     <button class="question" id="Q2" type="button">Show Answer</button>
                 </ul>
         
-        
         </ul>
     </div>
 
@@ -122,12 +175,62 @@
         <img src="dervatives.png" id="photo">
     </div>
 
+    <div id="problems">
+        <h3 class="header" id="practice-problems">Practice problems</h3>
+        <ol>
+            <li class="text">Usain Bolt is running the 100m sprint. Below is a table on his position and time during
+                the race. His speed is the the rate of change of his position over time.
+
+                <table class="table">
+                    <tr>
+                        <th>time (seconds)</th>
+                        <th>0</th>
+                        <th>2</th>
+                        <th>4</th>
+                        <th>6</th>
+                        <th>8</th>
+                        <th>9.58</th>
+                    </tr>
+                    <tr>
+                        <th>position (meters)</th>
+                        <th>0</th>
+                        <th>15</th>
+                        <th>40</th>
+                        <th>65</th>
+                        <th>90</th>
+                        <th>100</th>
+                    </tr>
+                </table>
+                Find his instantaneous speed at 2 seconds. 
+                <p class="tip">Hint: find his average speed from 0-2 seconds and 2-4 seconds. Then take
+                    the average of those two values.
+                </p>
+                <p class="answer" id="A3" style="display:none">10 m/s</p>
+                <button class="question" id="Q3" type="button">Show Answer</button>
+            </li>
+            
+            <li class="text">
+                f(x) = sin<sup>2</sup> (x<sup>3</sup>) <br>
+                Find f '(x) <br>
+                <p class="tip">
+                    Hint #1: you have to use the chain rule twice<br>
+                    Hint #2: sin<sup>2</sup>(x) is the same as ( sin(x) )<sup>2</sup>
+                </p>
+                <p class="answer" id="A4" style="display:none">
+                    6x<sup>2</sup> &emsp; &times; sin (x<sup>3</sup>) &emsp; &times;   cos (x<sup>3</sup>)
+                </p>
+                <button class="question" id="Q4" type="button">Show Answer</button>
+            </li>
+            
+        </ol>
+    </div>
+
 
 
     <img src="sun.png" id="icon">
 
     <div class="space"></div>
-    <a class="section" href="index.html">Main</a>
+    <a id="main" href="index.html">Main</a>
     <div class="space"></div>
 
     <script src="main.js"></script>
