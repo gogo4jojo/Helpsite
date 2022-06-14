@@ -9,6 +9,42 @@ icon.onclick = function(){
     }
 }
 
+var Q4 = document.getElementById("Q4");
+Q4.onclick = function(){
+    var A4 = document.getElementById("A4");
+    if (A4.style.display === "none"){
+        A4.style.display = "flex";
+        Q4.innerText = "Hide Answer";
+    }else{
+        A4.style.display = "none";
+        Q4.innerText = "Show Answer";
+    }
+}
+
+var Q3 = document.getElementById("Q3");
+Q3.onclick = function(){
+    var A3 = document.getElementById("A3");
+    if (A3.style.display === "none"){
+        A3.style.display = "flex";
+        Q3.innerText = "Hide Answer";
+    }else{
+        A3.style.display = "none";
+        Q3.innerText = "Show Answer";
+    }
+}
+
+var Q2 = document.getElementById("Q2");
+Q2.onclick = function(){
+    var A2 = document.getElementById("A2");
+    if (A2.style.display === "none"){
+        A2.style.display = "flex";
+        Q2.innerText = "Hide Answer";
+    }else{
+        A2.style.display = "none";
+        Q2.innerText = "Show Answer";
+    }
+}
+
 var Q1 = document.getElementById("Q1");
 Q1.onclick = function(){
     var A1 = document.getElementById("A1");
