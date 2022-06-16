@@ -1,3 +1,10 @@
+.video {
+    position: absolute;
+    margin: 2rem;
+    border: 2px solid white;
+    right: 0px;
+}
+
 #icon {
     top: 0px;
     right: 0px;
