@@ -9,16 +9,19 @@
 </head>
 <body class="page">
     <h1 class="header">Derivatives</h1>
-    <ul>
+
+    <div class="sidebar">
         <h2 class="header">Sections</h2>
-        <li class="text"><a href="#definition" class="text">Derivative definition</a></li>
-        <li class="text"><a href="#power-rule" class="text">Power rule</a></li>
-        <li class="text"><a href="#product-rule" class="text">Product rule</a></li>
-        <li class="text"><a href="#quotient-rule" class="text">Quotient rule</a></li>
-        <li class="text"><a href="#chain-rule" class="text">Chain rule</a></li>
-        <li class="text"><a href="#cheat-sheet" class="text">Cheat sheet</a></li>
-        <li class="text"><a href="#practice-problems" class="text">Practice problems</a></li>
-    </ul>
+        <a href="#definition" class="text">Derivative definition</a><br>
+        <a href="#power-rule" class="text">Power rule</a><br>
+        <a href="#product-rule" class="text">Product rule</a><br>
+        <a href="#quotient-rule" class="text">Quotient rule</a><br>
+        <a href="#chain-rule" class="text">Chain rule</a><br>
+        <a href="#implicit" class="text">Implicit differentiation</a><br>
+        <a href="#cheat-sheet" class="text">Cheat sheet</a><br>
+        <a href="#practice-problems" class="text">Practice problems</a>
+    </div>
+
     <br>
     <div id="derivative-definition">
         <h3 class="header" id="definition">What is a derivative?</h3>
@@ -210,6 +213,14 @@
         </ul>
     </div>
 
+    <div id="implicit differentiation">
+        <h3 class="header" id="implicit">Implicit differentiation</h3>
+        <p class="text">Video by Khan Academy</p>
+        <video
+            controls id="video" src="implicit.mp4" type="video/mp4" alt="https://youtu.be/mSVrqKZDRF4" height="300">
+        </video>
+    </div>
+
     <div id="cheatsheet">
         <h3 class="header" id="cheat-sheet">Cheat sheet</h3>
         <img src="dervatives.png" id="photo">
@@ -250,15 +261,17 @@
             </li>
             
             <li class="text">
-                <video class="video" height="300" controls>
-                    <source src="Problem2.mp4" type="video/mp4">
-                </video>
                 f(x) = sin<sup>2</sup> (x<sup>3</sup>) <br>
                 Find f '(x) <br>
                 <p class="tip">
                     Hint #1: you have to use the chain rule twice<br>
                     Hint #2: sin<sup>2</sup>(x) is the same as ( sin(x) )<sup>2</sup>
                 </p>
+
+                <video id="video" height="300" controls>
+                    <source src="Problem2.mp4" type="video/mp4">
+                </video>
+                <br>
                 
                 <p class="answer" id="A4" style="display:none">
                     6x<sup>2</sup> &emsp; &times; sin (x<sup>3</sup>) &emsp; &times; cos (x<sup>3</sup>)
@@ -280,7 +293,7 @@
                 </table>
                 <br>
                 Find f '(x) <br>
-                <table class="fraction" id="A5" style="color:red">
+                <table class="fraction" id="A5" style="display:none; color: red">
                         <tr>
                             <th id="numerator">
                                 4 ( 9x<sup>2</sup> - 1 - 6x<sup>3</sup> )
@@ -293,12 +306,20 @@
                 
                 <button class="question" id="Q5" type="button">Show Answer</button>
             </li>
+
+            <li class="text">
+                f(x) = 2<sup>x</sup><br>
+                Use implicit differentiation to find f '(x)<br>
+                y = 2<sup>x</sup><br>
+                Hint: take ln( ) of both sides<br>
+                <p class="answer" id="A6" style="display:none">
+                    ln(2) 2<sup>x</sup> 
+                </p>
+                <button class="question" id="Q6" type="button">Show Answer</button>
+            </li>
+
         </ol>
     </div>
-
-    
-
-
 
     <img src="sun.png" id="icon">
 
