@@ -1,11 +1,35 @@
-var icon = document.getElementById("icon");
 
+var icon = document.getElementById("icon");
 icon.onclick = function(){
     document.body.classList.toggle("light-theme");
     if(document.body.classList.contains("light-theme")){
         icon.src = "moon.png"
     }else {
         icon.src = "sun.png"
+    }
+}
+
+var Q6 = document.getElementById("Q6");
+Q6.onclick = function(){
+    var A6 = document.getElementById("A6");
+    if (A6.style.display === "none"){
+        A6.style.display = "flex";
+        Q6.innerText = "Hide Answer";
+    }else{
+        A6.style.display = "none";
+        Q6.innerText = "Show Answer";
+    }
+}
+
+var Q5 = document.getElementById("Q5");
+Q5.onclick = function(){
+    var A5 = document.getElementById("A5");
+    if (A5.style.display === "none"){
+        A5.style.display = "flex";
+        Q5.innerText = "Hide Answer";
+    }else{
+        A5.style.display = "none";
+        Q5.innerText = "Show Answer";
     }
 }
 
@@ -59,6 +83,7 @@ Q1.onclick = function(){
 
 
 document.addEventListener("DOMContentLoaded", () => {
+
     
     const loginForm = document.getElementById("login");
     const createAccountForm = document.getElementById("createAccount");
